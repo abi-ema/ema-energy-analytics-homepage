@@ -1,5 +1,7 @@
-import { MapPin, Mail, Phone, Linkedin, ExternalLink } from "lucide-react";
+import { MapPin, Mail, Linkedin, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
+import emaLogo from "@/assets/ema-logo.avif";
+import isoCertified from "@/assets/iso-certified.avif";
 
 const Footer = () => {
   const services = [
@@ -26,18 +28,24 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center border border-primary/30">
-                <span className="text-primary font-display font-bold text-lg">EMA</span>
-              </div>
+              <img 
+                src={emaLogo} 
+                alt="EMA Solutions" 
+                className="w-10 h-10 object-contain"
+                style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(155deg)' }}
+              />
               <span className="font-display font-semibold text-foreground">EMA Solutions</span>
             </div>
             <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
               South Asia's leading predictive analytics & trade automation provider for the power sector.
             </p>
             <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-secondary/50 border border-border/50 inline-flex">
-              <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center">
-                <span className="text-[8px] text-primary font-bold">ISO</span>
-              </div>
+              <img 
+                src={isoCertified} 
+                alt="ISO 27001 Certified" 
+                className="w-6 h-6 object-contain"
+                style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(155deg) brightness(0.9)' }}
+              />
               <span className="text-xs text-muted-foreground">ISO/IEC 27001 Certified</span>
             </div>
           </div>
