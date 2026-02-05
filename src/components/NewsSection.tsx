@@ -33,6 +33,22 @@ const newsItems = [
     url: "https://www.reuters.com/business/energy/china-india-lead-asias-biggest-hydropower-crunch-decades-2023-09-21",
     image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=216,fit=crop/mP4QzP82g2c40eWX/news4-mePnqwWxQXcgyxE7.jpg",
   },
+  {
+    title: "Dry August Sparks Unprecedented Power Demand Across India",
+    source: "Mercom",
+    date: "5 Sep 2023",
+    excerpt: "Victor Vanya, director at power analytics firm EMA Solutions, said higher humidity in the coming weeks could lead to a surge in power demand.",
+    url: "https://www.mercomindia.com/dry-august-sparks-demand-across-india",
+    image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=216,fit=crop/mP4QzP82g2c40eWX/news1-AzG7gLpGOjseQnjE.jpg",
+  },
+  {
+    title: "India's solar energy output growth slows in September",
+    source: "Reuters",
+    date: "October 6, 2021",
+    excerpt: "\"The main utility of hydro is to support wind and solar. If hydro itself becomes unreliable, India may have to think of alternatives,\" said Victor Vanya.",
+    url: "https://www.reuters.com/world/india/indias-solar-energy-output-growth-slows-september-2021-10-05",
+    image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=375,h=216,fit=crop/mP4QzP82g2c40eWX/news5-YD04QGzzRbiWJx7R.jpg",
+  },
 ];
 
 const NewsSection = () => {
