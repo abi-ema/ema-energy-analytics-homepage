@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import emaLogo from "@/assets/ema-logo.avif";
-import isoCertified from "@/assets/iso-certified.avif";
+import emaLogo from "@/assets/ema-logo.png";
+import isoCertified from "@/assets/iso-certified.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,12 +22,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo - Seamlessly merged with theme */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="relative w-10 h-10 md:w-12 md:h-12">
+          <div className="relative w-10 h-10 md:w-12 md:h-12">
               <img 
                 src={emaLogo} 
                 alt="EMA Solutions" 
-                className="w-full h-full object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
-                style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(155deg)' }}
+                className="w-full h-full object-contain opacity-90 hover:opacity-100 transition-opacity"
               />
             </div>
             <div className="hidden sm:block">
@@ -54,10 +53,9 @@ const Header = () => {
               <img 
                 src={isoCertified} 
                 alt="ISO 27001 Certified" 
-                className="w-6 h-6 object-contain"
-                style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(155deg) brightness(0.9)' }}
+                className="h-8 object-contain"
               />
-              <span className="text-xs text-muted-foreground">27001 Certified</span>
+              <span className="text-xs text-muted-foreground">ISO 27001</span>
             </div>
           </div>
 
@@ -89,8 +87,7 @@ const Header = () => {
                 <img 
                   src={isoCertified} 
                   alt="ISO 27001 Certified" 
-                  className="w-6 h-6 object-contain"
-                  style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(155deg) brightness(0.9)' }}
+                  className="h-8 object-contain"
                 />
                 <span className="text-xs text-muted-foreground">ISO/IEC 27001 Certified</span>
               </div>

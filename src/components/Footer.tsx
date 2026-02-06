@@ -1,7 +1,7 @@
 import { MapPin, Mail, Linkedin, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
-import emaLogo from "@/assets/ema-logo.avif";
-import isoCertified from "@/assets/iso-certified.avif";
+import emaLogo from "@/assets/ema-logo.png";
+import isoCertified from "@/assets/iso-certified.png";
 
 const Footer = () => {
   const services = [
@@ -32,7 +32,6 @@ const Footer = () => {
                 src={emaLogo} 
                 alt="EMA Solutions" 
                 className="w-10 h-10 object-contain"
-                style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(155deg)' }}
               />
               <span className="font-display font-semibold text-foreground">EMA Solutions</span>
             </div>
@@ -43,8 +42,7 @@ const Footer = () => {
               <img 
                 src={isoCertified} 
                 alt="ISO 27001 Certified" 
-                className="w-6 h-6 object-contain"
-                style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(155deg) brightness(0.9)' }}
+                className="h-10 object-contain"
               />
               <span className="text-xs text-muted-foreground">ISO/IEC 27001 Certified</span>
             </div>
